@@ -1,0 +1,16 @@
+query UserList {
+    stratz {
+        search(request: {
+            query : "whitelext"
+            take : 100
+        }) {
+            players {
+                id
+                avatar
+                name
+                seasonRank
+                lastMatchDateTime
+            }
+        }
+    }
+}
